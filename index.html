@@ -1,1 +1,47 @@
-<script src="scripts.js"></script>
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <style>
+    body {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      height: 100vh;
+      width: 100vw;
+      text-align: center;
+    }
+
+    h1 {
+      font-size: clamp(40px, 7vw, 500px);
+    }
+
+    p,
+    button {
+      font-size: clamp(20px, 2vw, 500px);
+    }
+
+    button {
+      padding: 15px;
+    }
+  </style>
+</head>
+
+<body>
+  <div class=".center">
+    <h1>Rock, Paper Scissors!</h1>
+    <p>To start, please open your browser developer console, then press the start button.</p>
+    <p>Click <a target="_blank" href="https://screenful.com/how-to-open-the-browser-console">here</a> if you don't know
+      to
+      open your
+      console.</p>
+    <button>Start</button>
+  </div>
+  <script src="scripts.js"></script>
+</body>
+
+</html>
