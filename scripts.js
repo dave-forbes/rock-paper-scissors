@@ -45,17 +45,6 @@ function scores(playerScore, computerScore) {
   }
 }
 
-function loop() {
-  for (let i = 1; i <= 5; i++) {
-    computerSelection = getComputerChoice();
-    playerSelection = getPlayerChoice();
-
-    let result = rockPaperScissors(playerSelection, computerSelection);
-
-    console.log(`Round ${i} results: `, result);
-  }
-}
-
 const start = document.querySelector('button');
 
 start.addEventListener("click", () => {
@@ -67,6 +56,8 @@ start.addEventListener("click", () => {
 
     console.log(`Round ${i} results: `, result);
   } console.log(scores(playerScore, computerScore));
+  playerScore = 0;
+  computerScore = 0;
 });
 
 
