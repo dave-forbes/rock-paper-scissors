@@ -45,40 +45,18 @@ function scores(playerScore, computerScore) {
   }
 }
 
-computerSelection = getComputerChoice();
-playerSelection = getPlayerChoice();
+function loop() {
+  for (let i = 1; i <= 5; i++) {
+    computerSelection = getComputerChoice();
+    playerSelection = getPlayerChoice();
 
-let result = rockPaperScissors(playerSelection, computerSelection);
+    let result = rockPaperScissors(playerSelection, computerSelection);
 
-console.log('Round 1 results: ', result);
+    console.log(`Round ${i} results: `, result);
+  }
+}
 
-computerSelection = getComputerChoice();
-playerSelection = getPlayerChoice();
-
-result = rockPaperScissors(playerSelection, computerSelection);
-
-console.log('Round 2 results: ', result);
-
-computerSelection = getComputerChoice();
-playerSelection = getPlayerChoice();
-
-result = rockPaperScissors(playerSelection, computerSelection);
-
-console.log('Round 3 results: ', result);
-
-computerSelection = getComputerChoice();
-playerSelection = getPlayerChoice();
-
-result = rockPaperScissors(playerSelection, computerSelection);
-
-console.log('Round 4 results: ', result);
-
-computerSelection = getComputerChoice();
-playerSelection = getPlayerChoice();
-
-result = rockPaperScissors(playerSelection, computerSelection);
-
-console.log('Round 5 results: ', result);
+loop()
 
 console.log(scores(playerScore, computerScore));
 
