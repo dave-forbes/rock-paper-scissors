@@ -41,7 +41,7 @@ function scores(playerScore, computerScore) {
   } else if (computerScore > playerScore) {
     return `Computer wins by ${computerScore} to ${playerScore}!`;
   } else {
-    return `The scores are tied at ${playerScore} and ${computerScore}! `;
+    return `It's a draw! The scores were tied at ${playerScore} and ${computerScore}! `;
   }
 }
 
