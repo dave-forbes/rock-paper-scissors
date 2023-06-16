@@ -37,7 +37,7 @@ function rockPaperScissors(playerSelection, computerSelection) {
 
 function scores(playerScore, computerScore) {
   if (playerScore > computerScore) {
-    return `Player wins by ${playerScore} - ${computerScore}!`;
+    return `You won by ${playerScore} - ${computerScore}!`;
   } else if (computerScore > playerScore) {
     return `Computer wins by ${computerScore} - ${playerScore}!`;
   } else {
