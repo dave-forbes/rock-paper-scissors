@@ -17,6 +17,7 @@ function getComputerChoice() {
   if (random < 100 / 3) {
     return 'rock';
   } else if (random > 100 / 3 && random < 200 / 3) {
+    return 'paper'
   } else {
     return 'scissors';
   }
