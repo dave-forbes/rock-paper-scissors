@@ -58,6 +58,8 @@ function playRound() {
     start.disabled = true;
     finalScores.textContent = scores(playerScore, computerScore);
   }
+  playerSelection = '';
+  playerChoice.textContent = 'Please choose before playing.'
 }
 
 rock.addEventListener('click', () => playerSelection = 'rock');
