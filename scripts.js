@@ -57,6 +57,7 @@ function playRound() {
   if (counter == 5) {
     start.disabled = true;
     finalScores.textContent = scores(playerScore, computerScore);
+    playerChoice.textContent = ''
   }
   playerSelection = '';
   playerChoice.textContent = 'Please choose before playing.'
