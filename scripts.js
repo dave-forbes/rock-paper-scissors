@@ -54,13 +54,13 @@ function playRound() {
   content.textContent = `Round ${counter}: ` + result;
   currentScores.textContent = `Player is on ${playerScore}` + ` and Computer is on ${computerScore}`;
   roundResults.appendChild(content);
+  playerSelection = '';
+  playerChoice.textContent = 'Please choose before playing.'
   if (counter == 5) {
     start.disabled = true;
     finalScores.textContent = scores(playerScore, computerScore);
     playerChoice.textContent = ''
   }
-  playerSelection = '';
-  playerChoice.textContent = 'Please choose before playing.'
 }
 
 rock.addEventListener('click', () => playerSelection = 'rock');
