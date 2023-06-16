@@ -7,40 +7,67 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Document</title>
   <style>
-    body {
+    html {
+      height: 100vh;
+      width: 100vw;
       display: flex;
       justify-content: center;
       align-items: center;
-      height: 100vh;
-      width: 100vw;
       text-align: center;
     }
 
+    img {
+      height: auto;
+      width: clamp(70px, 13vw, 150px);
+      margin: 20px 0 20px 0;
+    }
+
+    img:hover {
+      transition: 0.5s;
+      transform: scale(1.2);
+    }
+
     h1 {
-      font-size: clamp(40px, 7vw, 500px);
+      font-size: clamp(45px, 5vw, 50px);
+      margin: 0 0 20px 0;
+    }
+
+    h2 {
+      font-size: clamp(20px, 2.5vw, 30px);
+      margin: 10px 0;
     }
 
     p,
     button {
-      font-size: clamp(20px, 2vw, 500px);
+      font-size: clamp(15px, 1.5vw, 18px);
     }
 
     button {
-      padding: 15px;
+      padding: 5px;
+    }
+
+    .buttons {
+      display: flex;
+      justify-content: center;
+      gap: 20px;
     }
   </style>
 </head>
 
 <body>
-  <div class=".center">
-    <h1>Rock, Paper, Scissors!</h1>
-    <p>To start, please open your browser developer console, then press the start button.</p>
-    <p>Click <a target="_blank" href="https://screenful.com/how-to-open-the-browser-console">here</a> if you don't know
-      to
-      open your
-      console.</p>
-    <button>Start</button>
+  <h1>Rock, Paper, Scissors!</h1>
+  <img id="rock" src="drag.png">
+  <img id="paper" src="open-hands.png">
+  <img id="scissors" src="peace.png">
+  <p class="player-choice">Please choose then play.</p>
+  <div class="buttons">
+    <button class="play-round">Play Round</button>
+    <button class="play-again">Start Again</button>
+    <p class="scores"></p>
   </div>
+  <div class="round-results"></div>
+  <h2 class="final-scores"></h2>
+
   <script src="scripts.js"></script>
 </body>
 
